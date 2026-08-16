@@ -8,7 +8,9 @@
 }
 html{
       font-size: 16px;
+      scroll-behavior: smooth;
 }
+
 body{
     background-image: radial-gradient(circle at 0% 0%, rgba(206, 82, 255, 0.596),transparent 44%),
                       radial-gradient(circle at 0% 0%, rgba(91, 255, 255, 0.507),transparent 44%),
@@ -33,6 +35,28 @@ grid-template-rows: repeat(7,minmax(100px,auto-fit));
 gap: 20px;
 
 
+}
+.linkStyle {
+     background-color: rgba(0, 0, 0, 0.361);
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+.project-box p{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.linkStyle:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    box-shadow: 0 0 10px #f100fe, 0 0 20px #00f2fe;
 }
 header{
    
@@ -78,12 +102,15 @@ header{
     color:aliceblue;
     border-radius: 25px;
     padding: 10px 20px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+}h2{
+    text-align: center;
 }
 .button1:hover{
     background-image: none;
     background-color: white;
     color: black;
+    transform: translate(0px,-5px);
     border: aquamarine solid 2px;
     box-shadow: 0 0 10px #f100fe, 0 0 20px #00f2fe; 
 }
@@ -94,10 +121,11 @@ header{
     color:white;
     border-radius: 25px;
     padding: 10px 20px;
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 }
 .button2:hover {
     background-image: none;
+    transform: translate(0px,-5px);
     background-color: white;
     color: black;
     border: aquamarine solid 2px;
@@ -178,6 +206,9 @@ a{
     font-size: 1.2rem;
 line-height: 1.5;
 letter-spacing: 0.6px;
+}
+#contact{
+    font-size: 1.5rem;
 }
 .empty{
     background-color: rgba(240, 248, 255, 0);
@@ -487,7 +518,9 @@ nav ul li a {
     padding: 20px ;
 }
 }
-@media (max-width:428px) 
+
+
+@media (max-width:450px) 
 {
 
     .skills{
